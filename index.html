@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#09090b">
+    <meta name="description" content="Через страны и расстояния — для любимой сестры.">
+    <meta property="og:title" content="Домой — значит к тебе">
+    <meta property="og:description" content="Через страны и расстояния — для любимой сестры.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+
+    <title>Домой — значит к тебе</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="memory" aria-labelledby="memory-title">
+      <p class="eyebrow" aria-hidden="true">Через страны и расстояния</p>
+      <h1 id="memory-title">Домой — значит к тебе</h1>
+
+      <section class="player" aria-label="Видеовоспоминание">
+        <video
+          id="memory-video"
+          src="./video.mp4"
+          preload="metadata"
+          playsinline
+          webkit-playsinline
+          disablepictureinpicture
+          aria-label="Один особенный момент"
+        ></video>
+
+        <div class="player-shade" aria-hidden="true"></div>
+
+        <button class="play-button" id="play-button" type="button" aria-label="Посмотреть видео">
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <span id="play-label">Посмотреть</span>
+        </button>
+
+        <p class="player-message" id="player-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <p class="dedication">Для любимой сестры <span aria-label="с любовью">❤️</span></p>
+    </main>
+
+    <noscript>
+      <p class="noscript">Для просмотра видео включите JavaScript в браузере.</p>
+    </noscript>
+  </body>
+</html>
